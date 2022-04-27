@@ -1,0 +1,14 @@
+{
+  "solution": {
+    "path": "DevilDaggersInfo.AssetEditor.Uno.sln",
+    "projects": [
+		"DevilDaggersInfo.AssetEditor.Uno.Shared\\DevilDaggersInfo.AssetEditor.Uno.Shared.shproj",
+
+		"DevilDaggersInfo.AssetEditor.Uno.Mobile\\DevilDaggersInfo.AssetEditor.Uno.Mobile.csproj",
+
+		"DevilDaggersInfo.AssetEditor.Uno.Wasm\\DevilDaggersInfo.AssetEditor.Uno.Wasm.csproj",
+
+		"DevilDaggersInfo.AssetEditor.Uno.Skia.Gtk\\DevilDaggersInfo.AssetEditor.Uno.Skia.Gtk.csproj",
+    ]
+  }
+}

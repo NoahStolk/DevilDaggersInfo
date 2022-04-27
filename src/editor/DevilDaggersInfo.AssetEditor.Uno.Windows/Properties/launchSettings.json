@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"DevilDaggersInfo.AssetEditor.Uno.Windows (Package)": {
+			"commandName": "MsixPackage"
+		},
+		"DevilDaggersInfo.AssetEditor.Uno.Windows (Unpackaged)": {
+			"commandName": "Project"
+		}
+	}
+}

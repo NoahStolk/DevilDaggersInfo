@@ -33,6 +33,8 @@
 		<PackageVersion Include="Microsoft.AspNetCore.Components.WebAssembly.Authentication" Version="6.0.4" />
 		<PackageVersion Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
 		<PackageVersion Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageVersion Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+		<PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
 		<PackageVersion Include="Microsoft.JSInterop.WebAssembly" Version="6.0.4" />
 		<PackageVersion Include="System.Net.Http.Json" Version="6.0.0" />
 	</ItemGroup>
@@ -56,5 +58,12 @@
 	</ItemGroup>
 	<ItemGroup Label="WPF">
 		<PackageVersion Include="Ookii.Dialogs.Wpf" Version="5.0.1" />
+	</ItemGroup>
+	<ItemGroup Label="WinUI">
+		<PackageVersion Include="Uno.WinUI.Skia.Gtk" Version="4.2.6" />
+		<PackageVersion Include="Uno.WinUI.Skia.Linux.FrameBuffer" Version="4.2.6" />
+		<PackageVersion Include="Uno.WinUI.Skia.Wpf" Version="4.2.6" />
+		<PackageVersion Include="Uno.WinUI.RemoteControl" Version="4.2.6" />
+		<PackageVersion Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" Version="4.2.6" />
 	</ItemGroup>
 </Project>

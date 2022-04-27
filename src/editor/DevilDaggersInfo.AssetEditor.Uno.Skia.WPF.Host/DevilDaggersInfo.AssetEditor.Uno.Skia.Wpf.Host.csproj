@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Version>2.0.0.0-Uno-WPF-Alpha-0</Version>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <IsShippingPackage>false</IsShippingPackage>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" />
+	<PackageReference Include="Ookii.Dialogs.Wpf" />
+    <PackageReference Include="Uno.WinUI.Skia.Wpf" />
+    <PackageReference Include="Uno.WinUI.RemoteControl" Condition="'$(Configuration)'=='Debug'" />
+    <PackageReference Include="Uno.UI.Adapter.Microsoft.Extensions.Logging" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\uno-fluentui-assets.ttf" />
+    <Content Include="wwwroot\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\razor\DevilDaggersInfo.Razor.Core.AssetEditor\DevilDaggersInfo.Razor.Core.AssetEditor.csproj" />
+    <ProjectReference Include="..\DevilDaggersInfo.AssetEditor.Uno.Skia.WPF\DevilDaggersInfo.AssetEditor.Uno.Skia.WPF.csproj" />
+  </ItemGroup>
+</Project>
