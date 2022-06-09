@@ -107,6 +107,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevilDaggersInfo.Web.Server
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevilDaggersInfo.App.CustomLeaderboard.Chromely", "app\DevilDaggersInfo.App.CustomLeaderboard.Chromely\DevilDaggersInfo.App.CustomLeaderboard.Chromely.csproj", "{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevilDaggersInfo.App.CustomLeaderboard.Wasm", "app\DevilDaggersInfo.App.CustomLeaderboard.Wasm\DevilDaggersInfo.App.CustomLeaderboard.Wasm.csproj", "{B25FAA4C-C2CC-4DD5-B322-7DF964EAC298}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,12 +293,12 @@ Global
 		{CB715CD9-FB6A-4E79-B9C0-830833223D91}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Debug|Any CPU.Build.0 = Debug|x64
-		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Debug|x64.ActiveCfg = Debug|x64
-		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Debug|x64.Build.0 = Debug|x64
 		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Release|Any CPU.ActiveCfg = Release|x64
 		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Release|Any CPU.Build.0 = Release|x64
-		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Release|x64.ActiveCfg = Release|x64
-		{7C61A194-44F5-40E0-A20E-DEE767AB4EC6}.Release|x64.Build.0 = Release|x64
+		{B25FAA4C-C2CC-4DD5-B322-7DF964EAC298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25FAA4C-C2CC-4DD5-B322-7DF964EAC298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25FAA4C-C2CC-4DD5-B322-7DF964EAC298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25FAA4C-C2CC-4DD5-B322-7DF964EAC298}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

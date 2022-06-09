@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+  <PropertyGroup>
+    <RazorLangVersion>3.0</RazorLangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" PrivateAssets="all" />
+    <ProjectReference Include="..\..\razor-core\DevilDaggersInfo.Razor.Core.CustomLeaderboard\DevilDaggersInfo.Razor.Core.CustomLeaderboard.csproj" />
+  </ItemGroup>
+  <!--Copy both wwwroot and _framework directories to the app directory so Chromium can run it.-->
+  <!--TODO: Add for release build.-->
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(ProjectDir)wwwroot&quot; &quot;$(SolutionDir)\app\DevilDaggersInfo.App.CustomLeaderboard.Chromely\bin\x64\Debug\net6.0\win-x64\app&quot; /i /s /r /y /c&#xD;&#xA;xcopy &quot;$(TargetDir)wwwroot&quot; &quot;$(SolutionDir)\app\DevilDaggersInfo.App.CustomLeaderboard.Chromely\bin\x64\Debug\net6.0\win-x64\app&quot; /i /s /r /y /c" />
+  </Target>
+</Project>

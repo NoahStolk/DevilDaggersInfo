@@ -1,14 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
+    <SelfContained>true</SelfContained>
+    <PublishReadyToRun>true</PublishReadyToRun>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <Platforms>x64</Platforms>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Chromely" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="app\index.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <!--This dependency is only necessary to trigger copying the wwwroot files.-->
+    <ProjectReference Include="..\DevilDaggersInfo.App.CustomLeaderboard.Wasm\DevilDaggersInfo.App.CustomLeaderboard.Wasm.csproj" />
   </ItemGroup>
 </Project>
