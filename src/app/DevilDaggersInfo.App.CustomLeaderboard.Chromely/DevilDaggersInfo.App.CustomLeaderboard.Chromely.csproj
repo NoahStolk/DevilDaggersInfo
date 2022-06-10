@@ -8,9 +8,15 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Chromely" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" />
   </ItemGroup>
   <ItemGroup>
     <!--This dependency is only necessary to trigger copying the wwwroot files.-->
     <ProjectReference Include="..\DevilDaggersInfo.App.CustomLeaderboard.Wasm\DevilDaggersInfo.App.CustomLeaderboard.Wasm.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

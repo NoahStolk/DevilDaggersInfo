@@ -1,5 +1,15 @@
 @inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
 
 <div class="font-calibri bg-black text-color-text h-full">
 	@Body
 </div>
+
+@code
+{
+	protected override void OnAfterRender(bool firstRender)
+	{
+		if (firstRender)
+			NavigationManager.NavigateTo("/");
+	}
+}
