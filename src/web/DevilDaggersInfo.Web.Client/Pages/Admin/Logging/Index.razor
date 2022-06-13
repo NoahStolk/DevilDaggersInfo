@@ -1,0 +1,16 @@
+@page "/admin/logging"
+@inherits BaseAdminPage
+
+<AdminAuthorizer Base="this" RequiredRole="@Roles.Admin">
+	<Heading Title="Admin - Logging" />
+
+	<button class="btn btn-red" @onclick="@(async () => await TestException())">Test exception</button>
+</AdminAuthorizer>
+
+@code
+{
+	private async Task TestException()
+	{
+		await Http.TestException("Admin test");
+	}
+}
