@@ -5,12 +5,18 @@
 	<Heading Title="Admin - Logging" />
 
 	<button class="btn btn-red" @onclick="@(async () => await TestException())">Test exception</button>
+	<button class="btn btn-red" @onclick="@(async () => await LogError())">Log error</button>
+	<button class="btn btn-orange" @onclick="@(async () => await LogWarning())">Log warning</button>
+	<button class="btn btn-green" @onclick="@(async () => await LogInfo())">Log info</button>
 </AdminAuthorizer>
 
 @code
 {
-	private async Task TestException()
-	{
-		await Http.TestException("Admin test");
-	}
+	private async Task TestException() => await Http.TestException("Admin test");
+
+	private async Task LogError() => await Http.LogError("Admin test");
+
+	private async Task LogWarning() => await Http.LogWarning("Admin test");
+
+	private async Task LogInfo() => await Http.LogInfo("Admin test");
 }
