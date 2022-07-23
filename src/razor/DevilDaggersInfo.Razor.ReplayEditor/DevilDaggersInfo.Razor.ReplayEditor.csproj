@@ -27,6 +27,7 @@
     <ProjectReference Include="..\..\app-core\DevilDaggersInfo.App.Core.GameMemory\DevilDaggersInfo.App.Core.GameMemory.csproj" />
     <ProjectReference Include="..\..\common\DevilDaggersInfo.Common\DevilDaggersInfo.Common.csproj" />
     <ProjectReference Include="..\..\core\DevilDaggersInfo.Core.Replay\DevilDaggersInfo.Core.Replay.csproj" />
+    <ProjectReference Include="..\..\razor-core\DevilDaggersInfo.Razor.Core.CanvasArena\DevilDaggersInfo.Razor.Core.CanvasArena.csproj" />
     <ProjectReference Include="..\..\razor-core\DevilDaggersInfo.Razor.Core.Components\DevilDaggersInfo.Razor.Core.Components.csproj" />
   </ItemGroup>
 </Project>
