@@ -4,12 +4,20 @@
 @using Fluxor
 @inject IState<ReplayBinaryState> ReplayBinaryState
 
-<EventViewer Title="Transmute">
+<EventViewer Title="Transmute" GridConfig="grid-cols-5">
 	<Head>
 		<span>Entity ID</span>
+		<span>A</span>
+		<span>B</span>
+		<span>C</span>
+		<span>D</span>
 	</Head>
 	<Body>
 		<span>@MarkupUtils.EntityType(Event.EntityId, ReplayBinaryState.Value.ReplayBinary.EventsData.EntityTypes)</span>
+		<span>@Event.A</span>
+		<span>@Event.B</span>
+		<span>@Event.C</span>
+		<span>@Event.D</span>
 	</Body>
 </EventViewer>
 
