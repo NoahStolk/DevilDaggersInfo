@@ -2,11 +2,11 @@ using Microsoft.JSInterop;
 
 namespace DevilDaggersInfo.Razor.Core.Canvas;
 
-public abstract class Canvas
+public abstract class UnmarshalledCanvas
 {
 	private readonly IJSUnmarshalledRuntime _runtime;
 
-	protected Canvas(IJSUnmarshalledRuntime runtime, string id)
+	protected UnmarshalledCanvas(IJSUnmarshalledRuntime runtime, string id)
 	{
 		_runtime = runtime;
 		Id = id;

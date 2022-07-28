@@ -9,7 +9,7 @@ namespace DevilDaggersInfo.Razor.Core.CanvasChart.Components;
 
 public partial class BarChart
 {
-	private Canvas2d? _context;
+	private UnmarshalledCanvas2d? _context;
 	private object? _canvasReference;
 	private ChartHighlighter? _highlighter;
 
@@ -60,7 +60,7 @@ public partial class BarChart
 			await JsRuntime.InvokeAsync<object>("chartInitialResize", DotNetObjectReference.Create(this));
 		}
 
-		_context = new Canvas2d((IJSUnmarshalledRuntime)JsRuntime, $"{UniqueName}-canvas");
+		_context = new UnmarshalledCanvas2d((IJSUnmarshalledRuntime)JsRuntime, $"{UniqueName}-canvas");
 
 		Render();
 	}
