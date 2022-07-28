@@ -4,7 +4,7 @@ namespace DevilDaggersInfo.Razor.Core.Canvas;
 
 public abstract class Canvas
 {
-	private static readonly WebAssemblyJSRuntime _runtime = new CustomWebAssemblyJSRuntime();
+	private static readonly CustomWebAssemblyJSRuntime _runtime = new();
 
 	protected Canvas(string id)
 	{
