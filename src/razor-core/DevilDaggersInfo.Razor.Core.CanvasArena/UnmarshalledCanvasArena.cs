@@ -3,9 +3,9 @@ using Microsoft.JSInterop;
 
 namespace DevilDaggersInfo.Razor.Core.CanvasArena;
 
-public class CanvasArena : UnmarshalledCanvas2d
+public class UnmarshalledCanvasArena : UnmarshalledCanvas2d
 {
-	public CanvasArena(IJSUnmarshalledRuntime runtime, string id)
+	public UnmarshalledCanvasArena(IJSUnmarshalledRuntime runtime, string id)
 		: base(runtime, id)
 	{
 	}

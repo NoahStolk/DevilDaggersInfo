@@ -11,7 +11,7 @@ public partial class SpawnsetArena
 	private int _canvasSize;
 	private float _tileSize;
 
-	private CanvasArena? _context;
+	private UnmarshalledCanvasArena? _context;
 	private object? _canvasReference;
 
 	private double _canvasMouseX;
@@ -39,7 +39,7 @@ public partial class SpawnsetArena
 			await JsRuntime.InvokeAsync<object>("arenaInitialResize");
 		}
 
-		_context = new CanvasArena((IJSUnmarshalledRuntime)JsRuntime, "arena-canvas");
+		_context = new UnmarshalledCanvasArena((IJSUnmarshalledRuntime)JsRuntime, "arena-canvas");
 
 		Render();
 	}
