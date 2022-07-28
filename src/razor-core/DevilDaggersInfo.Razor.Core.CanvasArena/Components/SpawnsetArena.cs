@@ -39,7 +39,7 @@ public partial class SpawnsetArena
 			await JsRuntime.InvokeAsync<object>("arenaInitialResize");
 		}
 
-		_context = new CanvasArena("arena-canvas");
+		_context = new CanvasArena((IJSUnmarshalledRuntime)JsRuntime, "arena-canvas");
 
 		Render();
 	}

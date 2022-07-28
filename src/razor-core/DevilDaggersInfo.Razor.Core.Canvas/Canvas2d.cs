@@ -1,3 +1,5 @@
+using Microsoft.JSInterop;
+
 namespace DevilDaggersInfo.Razor.Core.Canvas;
 
 /// <summary>
@@ -21,8 +23,8 @@ public class Canvas2d : Canvas
 	private float? _shadowOffsetX;
 	private float? _shadowOffsetY;
 
-	public Canvas2d(string id)
-		: base(id)
+	public Canvas2d(IJSUnmarshalledRuntime runtime, string id)
+		: base(runtime, id)
 	{
 	}
 
@@ -323,6 +325,7 @@ public class Canvas2d : Canvas
 	public void ClearRect(double x, double y, double width, double height)
 		=> ClearRect((float)x, (float)y, (float)width, (float)height);
 
+	// TODO: Use in .NET 7? [System.Runtime.InteropServices.JavaScript.JSImport("c2d.clearRect")]
 	public void ClearRect(float x, float y, float width, float height)
 		=> Invoke("c2d.clearRect", x, y, width, height);
 

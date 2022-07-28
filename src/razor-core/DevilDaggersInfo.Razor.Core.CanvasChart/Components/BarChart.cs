@@ -60,7 +60,7 @@ public partial class BarChart
 			await JsRuntime.InvokeAsync<object>("chartInitialResize", DotNetObjectReference.Create(this));
 		}
 
-		_context = new Canvas2d($"{UniqueName}-canvas");
+		_context = new Canvas2d((IJSUnmarshalledRuntime)JsRuntime, $"{UniqueName}-canvas");
 
 		Render();
 	}

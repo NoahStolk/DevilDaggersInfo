@@ -1,11 +1,12 @@
 using DevilDaggersInfo.Razor.Core.Canvas;
+using Microsoft.JSInterop;
 
 namespace DevilDaggersInfo.Razor.Core.CanvasArena;
 
 public class CanvasArena : Canvas2d
 {
-	public CanvasArena(string id)
-		: base(id)
+	public CanvasArena(IJSUnmarshalledRuntime runtime, string id)
+		: base(runtime, id)
 	{
 	}
 
